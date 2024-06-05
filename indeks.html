@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+    <nav>
+        <table>
+            <tr><th><a class="nav" href="#A">O mnie</a></th>
+                <th><a class="nav" href="#B">Moje zainteresowania</a></th>
+                <th><a class="nav" href="#C">Moja szkoła</a></th></tr>
+        </table>
+    </nav>
+    <br>
+    <br>
+    <a href='http://www.counterliczniki.com'>Licznik odwiedzin</a> <script type='text/javascript' src='https://www.counterliczniki.com/auth.php?id=67d502d23a65118c5f54c1de0da7e1ba7063469b'></script>
+    <script type="text/javascript" src="https://www.counterliczniki.com/pl/home/counter/1123117/t/3"></script>
+    <br>
+    <div class="star-rating">
+        <input type="radio" id="star5" name="rating" value="5"><label class="star" for="star5">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4"><label class="star" for="star4">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3"><label class="star" for="star3">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2"><label class="star" for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1"><label class="star" for="star1">&#9733;</label>
+    </div>
+    <script>
+        document.querySelector('.star-rating').addEventListener('change', (e) => {
+            if (e.target.name === 'rating') {
+                console.log(`Rated: ${e.target.value} stars`);
+            }
+        });
+    </script>
+    <br>
+    <video controls>
+        <source src="Vid.mp4" type="video/mp4">
+      </video>
+    <br>
+    <section id="A">
+    <div>Nazywam się Krzysztof Biczak i chodzę do klasy 1TP w Zespole Szkół Elektronicznych i Telekomunikacyjnych w Olsztynie.</div>
+    <div>Chodzę na przedmioty witryny i aplikacje internetowe, bazy danych i pracownie witryn i aplikacji internetowych.</div>
+    <div>Mój ulubiony przedmiot to pracownie witryn i aplikacji internetowych.</div>
+    <img class="sigma" src="sigma.png" alt="Sigma">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table class="D">
+        <tr><th class="D">Moje zainteresowania</th><th class="D">Wyniki moich zainteresowań</th></tr>
+        <tr><td class="D">Gry komputerowe</td><td class="D">Słabo gram w gry komputerowe</td></tr>
+        <tr><td class="D">Nauka</td><td class="D">Dobrze się uczę i nieżle mi idzie</td></tr>
+        <tr><td class="D">Rowerzystwo</td><td class="D">Nie umiem jeżdzic na rowerze</td></tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>Zeszpól Szkół Elektronicznych i Telekomunikacyjnych w Olsztynie jest bardzo przestiżową szkołą.</div>
+    <div>Posiada profesjonalną kastę nauczycieli w tym niezwykle prestiżowego Mirosława Bukowskiego</div>
+    <a href="https://zseit.olsztyn.eu">
+        <img class="map" src="Mapa.png">
+    </a>
+    <div class="g">
+        <img src="sigma.png" alt="Sigma">
+        <img src="BSigma.png" alt="Sigma w poważnym stroju">
+        <img src="Ptok.png" alt="Biały gołąb">
+    </div>
+    <footer class="footer">
+        <table>
+            <tr><th>Numer Telefonu</th><td>+48 22 695 82 04</td></tr>
+            <tr><th>Email</th><td>k.biczak@zseit.pl</td></tr>
+            <tr><th>Posiadłość</th><td>Olsztyn ul. Bałtycka 38 B</td></tr>
+        </table>
+    </footer>
+</body>
+</html>

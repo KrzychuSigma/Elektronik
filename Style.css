@@ -1,0 +1,76 @@
+*{
+   font-size: 1.4rem;
+   text-align: center;
+}
+body{
+    background-color: lightblue;
+}
+.marker:hover{
+    transform: scale(1.3);
+}
+table.D,tr.D,td.D,th.D{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+nav{
+    position: sticky;
+    background: red;
+    font-size: 2rem;
+    text-align: center;
+}
+.footer{
+    background-color: black;
+    color: gold;
+}
+tr,td,th{
+    padding-left: 5pt;
+    padding-right: 5pt;
+}
+.sigma{
+    height: 500px;
+}
+.star-rating {
+    display: flex;
+    direction: row-reverse;
+    justify-content: center;
+}
+.star {
+    font-size: 2em;
+    color: lightgray;
+    cursor: pointer;
+}
+input:checked ~ label,
+input:hover ~ label {
+    color: gold;
+}
+input {
+    display: none;
+}
+
+.g {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    
+}
+
+.g img {
+    width: 300px;
+    height: 400px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
+    border-left: 3px solid black;
+    border-top: 5px dotted red;
+    border-right: 2px dashed blue;
+    border-bottom: 7px groove green;
+}
+
+.g img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
